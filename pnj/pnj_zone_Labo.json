@@ -1,0 +1,14 @@
+{
+    "Prof": {
+        "COO": [
+            208,
+            80
+        ],
+        "NOM": "Prof",
+        "TEXTE": "Bonjour. Suite à un dérèglement climatique, des Pokémon d'un nouveau type sont apparus : le type lumière. J'aimerais vraiment pouvoir les étudier, mais je suis trop vieux pour partir les capturer. Je t'offre donc l'un des trois Pokémon que tu vois sur la table en échange de la promesse que tu captures tous les Pokémon lumière que tu pourras trouver.",      
+        "BOUGE": 3,
+        "Orientation": 0,
+        "TEAM": [],
+        "comp": "PARLER"
+    }
+}

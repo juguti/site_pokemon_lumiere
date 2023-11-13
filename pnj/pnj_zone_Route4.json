@@ -1,0 +1,67 @@
+{
+    "Dany": {
+        "COO": [
+            192,
+            144
+        ],
+        "NOM": "Dany",
+        "TEXTE": "Tu vas finir en sardine.",
+        "BOUGE": 3,
+        "Orientation": 0,
+        "TEAM": [
+            {"N": "18", "POKEMON": "Cachamousse", "NOM": "Cachamousse", "TYPE1": "Tenebre", "TYPE2": "Eau", "BPV": "84", "NIVEAU": 8, "SEXE": "m", "ATTAQUE1": "Blocage", "ATTAQUE2": "Pistolet a O", "ATTAQUE3": "Aqua Jet", "ATTAQUE4": "Poursuite", "PP1": 10, "PP2": 25, "PP3": 20, "PP4": 20, "XP": 0, "XPMAX": 512, "BATK": "69", "BDEF": "48", "BSPA": "63", "BSPD": "51", "BSPE": "35", "ATK": 17, "DEF": 17, "SPA": 17, "SPD": 16, "SPE": 13, "PV": 34, "PVMAX": 34, "OBJET": "", "STATUT": "ok", "IVATK": 8, "IVDEF": 29, "IVSPA": 13, "IVSPD": 15, "IVSPE": 15, "IVPV": 15, "NATURE": "Solo", "COURBE": "moyenne", "EVPV": 0, "EVATK": 0, "EVDEF": 0, "EVSPA": 0, "EVSPD": 0, "EVSPE": 0, "TCAPTURE": "80"}
+
+                
+            
+        ],
+        "comp": "COMBAT",
+        "recomp": [
+            "argent",
+            1000
+        ]
+    },
+    "Alex": {
+        "COO": [
+            576,
+            208
+        ],
+        "NOM": "Alex",
+        "TEXTE": "Je suis venu faire un chateau de sable mais je me suis perdu.",
+        "BOUGE": 3,
+        "Orientation": 1,
+        "TEAM": [
+            {"N": "59", "POKEMON": "Cirqua", "NOM": "Cirqua", "TYPE1": "Eau", "TYPE2": "", "BPV": "40", "NIVEAU": 8, "SEXE": "f", "ATTAQUE1": "Aqua Jet", "ATTAQUE2": "Pistolet a O", "ATTAQUE3": "Coup Bas", "ATTAQUE4": "Reflet", "PP1": 20, "PP2": 25, "PP3": 5, "PP4": 15, "XP": 0, "XPMAX": 409, "BATK": "51", "BDEF": "49", "BSPA": "55", "BSPD": "55", "BSPE": "60", "ATK": 13, "DEF": 18, "SPA": 17, "SPD": 15, "SPE": 15, "PV": 29, "PVMAX": 29, "OBJET": "", "STATUT": "ok", "IVATK": 0, "IVDEF": 31, "IVSPA": 20, "IVSPD": 9, "IVSPE": 0, "IVPV": 31, "NATURE": "Malpoli", "COURBE": "rapide", "EVPV": 0, "EVATK": 0, "EVDEF": 0, "EVSPA": 0, "EVSPD": 0, "EVSPE": 0, "TCAPTURE": ""},
+            {"N": "18", "POKEMON": "Cachamousse", "NOM": "Cachamousse", "TYPE1": "Tenebre", "TYPE2": "Eau", "BPV": "84", "NIVEAU": 7, "SEXE": "m", "ATTAQUE1": "Blocage", "ATTAQUE2": "Pistolet a O", "ATTAQUE3": "Aqua Jet", "ATTAQUE4": "Poursuite", "PP1": 10, "PP2": 25, "PP3": 20, "PP4": 20, "XP": 0, "XPMAX": 343, "BATK": "69", "BDEF": "48", "BSPA": "63", "BSPD": "51", "BSPE": "35", "ATK": 18, "DEF": 14, "SPA": 14, "SPD": 13, "SPE": 14, "PV": 31, "PVMAX": 31, "OBJET": "", "STATUT": "ok", "IVATK": 23, "IVDEF": 17, "IVSPA": 0, "IVSPD": 6, "IVSPE": 29, "IVPV": 14, "NATURE": "Jovial", "COURBE": "moyenne", "EVPV": 0, "EVATK": 0, "EVDEF": 0, "EVSPA": 0, "EVSPD": 0, "EVSPE": 0, "TCAPTURE": "80"}
+
+
+                
+            
+        ],
+        "comp": "COMBAT",
+        "recomp": [
+            "argent",
+            1200
+        ]
+    },
+    "Joe": {
+        "COO": [
+            1264,
+            160
+        ],
+        "NOM": "Joe",
+        "TEXTE": "J'ai le tournis, en garde,Beurk.",
+        "BOUGE": 1,
+        "Orientation": 1,
+        "TEAM": [
+            {"N": "10", "POKEMON": "Colibrat", "NOM": "Colibrat", "TYPE1": "Combat", "TYPE2": "", "BPV": "40", "NIVEAU": 7, "SEXE": "m", "ATTAQUE1": "Grimace", "ATTAQUE2": "Charge", "ATTAQUE3": "Pic Pic", "ATTAQUE4": "Cogne", "PP1": 10, "PP2": 35, "PP3": 20, "PP4": 20, "XP": 0, "XPMAX": 274, "BATK": "55", "BDEF": "30", "BSPA": "30", "BSPD": "35", "BSPE": "64", "ATK": 14, "DEF": 10, "SPA": 11, "SPD": 12, "SPE": 18, "PV": 27, "PVMAX": 27, "OBJET": "", "STATUT": "ok", "IVATK": 6, "IVDEF": 7, "IVSPA": 14, "IVSPD": 18, "IVSPE": 29, "IVPV": 28, "NATURE": "Foufou", "COURBE": "rapide", "EVPV": 0, "EVATK": 0, "EVDEF": 0, "EVSPA": 0, "EVSPD": 0, "EVSPE": 0, "TCAPTURE": "255"}
+
+                
+            
+        ],
+        "comp": "COMBAT",
+        "recomp": [
+            "argent",
+            1200
+        ]
+    }
+}

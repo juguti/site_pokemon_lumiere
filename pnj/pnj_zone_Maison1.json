@@ -1,0 +1,13 @@
+{
+    "Maman": {
+        "COO": [ 288, 656 ],
+        "NOM": "Maman",
+        "TEXTE": [
+          ["None","Tu grandis si vite, tu as deja l'age d'avoir ton pemier pokémon",[]],
+          ["recup_starter","Comme tu part à l'aventure prend ces chaussures qui te permetront de courrir en appuiyant sur v",["objet",11,"progression","chaussure_rapide"]],
+          ["chaussure_rapide","Aller va t'ammuser",[]]
+        ],
+        "BOUGE": 1,
+        "comp":"PARLER"
+      }
+}
