@@ -6,9 +6,19 @@
     <title>Document</title>
 </head>
 <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: url("FondPokedex.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optionnel : pour figer l'image pendant le défilement */
+    padding: 16px;
+}
     img{
-        width: 160px;
+        width: 256px;
         height: auto;
+        margin: 16px;
     }
     video{
         width: 50%;
@@ -22,11 +32,39 @@
         display: flex;
         flex-direction: row;
         margin: 16px;
-        background-color: rgb(224, 235, 244);
+        background-color: rgba(224, 235, 244, 0.537);
         box-shadow: 4px 4px 4px black;
         border-radius: 25px;
         padding: 16px;
         }
+    .desc{
+        background-color: rgb(101, 101, 160);
+        color: white;
+        width: auto;
+        height: auto;
+        text-align: center;
+    
+    }
+    .pnj{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+        color: rgb(42, 165, 54);
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 75px;
+        color: rgb(58, 132, 66);
+    }
+    
 </style>
 <body>
     <h1>Model de PNJ</h1>
@@ -36,19 +74,19 @@
         Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
     <h2>Il vous suffit de cliquer sur le model voulu pour telecharger le zip correspondant .</h2>
-    <div>
-        <a href="pnj/Alex.zip" download="pnj/Alex">
-            <div>Fait par: W3IZZ <br> se nomme: Alex</div>
-            <img src="pnj/Alex/front.png" alt="">
-            <img src="pnj/Alex/back.png" alt="">
-            <img src="pnj/Alex/left.png" alt="">
-            <img src="pnj/Alex/right.png" alt="">
-            
+    <div >
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Alex</div>
+        <a href="pnj/Alex.zip" download="pnj/Alex" >
+                <img src="pnj/Alex/front.png" alt="">
+                <img src="pnj/Alex/back.png" alt="">
+                <img src="pnj/Alex/left.png" alt="">
+                <img src="pnj/Alex/right.png" alt="">  
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Champion_eau</div>
         <a href="pnj/Champion_eau.zip" download="pnj/Champion_eau">
-            <div>Fait par: W3IZZ <br> se nomme: Champion_eau</div>
+            
             <img src="pnj/Champion_eau/front.png" alt="">
             <img src="pnj/Champion_eau/back.png" alt="">
             <img src="pnj/Champion_eau/left.png" alt="">
@@ -56,8 +94,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Dany</div>
         <a href="pnj/Dany.zip" download="pnj/Dany">
-            <div>Fait par: W3IZZ <br> se nomme: Dany</div>
+            
             <img src="pnj/Dany/front.png" alt="">
             <img src="pnj/Dany/back.png" alt="">
             <img src="pnj/Dany/left.png" alt="">
@@ -65,8 +104,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Flora</div>
         <a href="pnj/Flora.zip" download="pnj/Flora">
-            <div>Fait par: W3IZZ <br> se nomme: Flora</div>
+            
             <img src="pnj/Flora/front.png" alt="">
             <img src="pnj/Flora/back.png" alt="">
             <img src="pnj/Flora/left.png" alt="">
@@ -74,8 +114,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: infermiere</div>
         <a href="pnj/infermiere.zip" download="pnj/infermière">
-            <div>Fait par: W3IZZ <br> se nomme: infermiere</div>
+            
             <img src="pnj/infermiere/Front.png" alt="">
             <img src="pnj/infermiere/back.png" alt="">
             <img src="pnj/infermiere/left.png" alt="">
@@ -83,8 +124,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Joe</div>
         <a href="pnj/Joe.zip" download="pnj/joe">
-            <div>Fait par: W3IZZ <br> se nomme: Joe</div>
+            
             <img src="pnj/Joe/front.png" alt="">
             <img src="pnj/Joe/back.png" alt="">
             <img src="pnj/Joe/left.png" alt="">
@@ -92,8 +134,8 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Lea</div>
         <a href="pnj/Lea.zip" download="pnj/Lea">
-            <div>Fait par: W3IZZ <br> se nomme: Lea</div>
             <img src="pnj/Lea/Front.png" alt="">
             <img src="pnj/Lea/back.png" alt="">
             <img src="pnj/Lea/left.png" alt="">
@@ -101,8 +143,9 @@
         </a>
     </div>
     <div>
+        <div class = "desc">Fait par: W3IZZ <br> se nomme: Maman</div>
         <a href="pnj/Maman.zip" download="pnj/Maman">
-            <div>Fait par: W3IZZ <br> se nomme: Maman</div>
+            
             <img src="pnj/Maman/Front.png" alt="">
             <img src="pnj/Maman/back.png" alt="">
             <img src="pnj/Maman/left.png" alt="">
@@ -110,8 +153,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par:Sussy <br> se nomme: max</div>
         <a href="pnj/max.zip" download="pnj/Max">
-            <div>Fait par:Sussy <br> se nomme: max</div>
+            
             <img src="pnj/max/Front.png" alt="">
             <img src="pnj/max/back.png" alt="">
             <img src="pnj/max/left.png" alt="">
@@ -119,8 +163,9 @@
         </a>
     </div>
     <div>
+        <div class = "desc">Fait par: W3IZZ <br> se nomme: Nageur1</div>
         <a href="pnj/Nageur1.zip" download="pnj/Nageur1">
-            <div>Fait par: W3IZZ <br> se nomme: Nageur1</div>
+            
             <img src="pnj/Nageur1/front.png" alt="">
             <img src="pnj/Nageur1/back.png" alt="">
             <img src="pnj/Nageur1/left.png" alt="">
@@ -128,8 +173,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Nageur2</div>
         <a href="pnj/Nageur2.zip" download="pnj/Nageur2">
-            <div>Fait par: W3IZZ <br> se nomme: Nageur2</div>
+            
             <img src="pnj/Nageur2/Front.png" alt="">
             <img src="pnj/Nageur2/back.png" alt="">
             <img src="pnj/Nageur2/left.png" alt="">
@@ -137,8 +183,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Player</div>
         <a href="pnj/player.zip" download="pnj/player">
-            <div>Fait par: W3IZZ <br> se nomme: Player</div>
+            
             <img src="pnj/player/Player.png" alt="">
             <img src="pnj/player/PlayerBack.png" alt="">
             <img src="pnj/player/PlayerLeft.png" alt="">
@@ -146,8 +193,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Prof</div>
         <a href="pnj/Prof.zip" download="pnj/Prof">
-            <div>Fait par: W3IZZ <br> se nomme: Prof</div>
+            
             <img src="pnj/Prof/front.png" alt="">
             <img src="pnj/Prof/back.png" alt="">
             <img src="pnj/Prof/left.png" alt="">
@@ -155,8 +203,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Rival</div>
         <a href="pnj/rival.zip" download="pnj/rival">
-            <div>Fait par: W3IZZ <br> se nomme: Rival</div>
+            
             <img src="pnj/rival/Front.png" alt="">
             <img src="pnj/rival/back.png" alt="">
             <img src="pnj/rival/left.png" alt="">
@@ -164,8 +213,9 @@
         </a>
     </div>
     <div>
+        <div class="desc">Fait par: Toby <br> se nomme: Toby</div>
         <a href="pnj/Toby1.zip" download="pnj/Toby">
-            <div>Fait par: Toby <br> se nomme: Toby</div>
+            
             <img src="pnj/Toby1/Front.png" alt="">
             <img src="pnj/Toby1/back.png" alt="">
             <img src="pnj/Toby1/left.png" alt="">
