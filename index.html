@@ -32,7 +32,7 @@
   <!-- Bouton de téléchargement -->
   <div class="download-btn">
     <a href="#" download id="down">Télécharger</a>
-    <div class="countdown" id="countdown"></div>
+    <p class="countdown" id="countdown"></p>
   </div>
   <!-- Chronomètre -->
   
@@ -74,9 +74,12 @@
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Affichage dans le document
+      if (year < 2024) {
+      // Si ce n'est pas le 1er janvier, cacher le bouton de téléchargement
       document.getElementById('countdown').innerHTML = `
-        Temps restant avant le téléchargement  : ${days} jours, ${hours} heures, ${minutes} minutes, ${seconds} secondes
-      `;
+        Temps restant avant le téléchargement  : ${days} jours, ${hours} heures, ${minutes} minutes, ${seconds} secondes`;
+    }
+      
 
       // Actualisation du compte à rebours toutes les 1 seconde
       if (distance > 0) {
