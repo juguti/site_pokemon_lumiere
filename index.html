@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma Page Web</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+  <!-- Menu burger -->
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Home</a></li>
+      <li><a class="menu__item" href="pnj_sheet.html">PNJ</a></li>
+    </ul>
+  </div>
+  <!-- Autres éléments de la page -->
+
+  <!-- Vidéo -->
+  <div class="video-container">
+    <video controls>
+      <source src="trailer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Bouton de téléchargement -->
+  <div class="download-btn">
+    <a href="#" download id="down">Télécharger</a>
+    <div class="countdown" id="countdown"></div>
+  </div>
+  <!-- Chronomètre -->
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/juguti77/"><div><img class="insta" src="instagram.png" alt="Instagram"><p>juguti77</p></div></a>
+      <a href="https://www.instagram.com/w3izz_off/"><div><img class="insta" src="instagram.png" alt="Instagram"><p>w3izz_off</p></div></a>
+    </div>
+  </footer>
+
+  
+
+  <!-- Script JavaScript -->
+  <script>
+    // Récupérer la date actuelle
+    let currentDate = new Date();
+    
+    let year= currentDate.getFullYear(); // Les mois commencent à 0 (janvier = 0)
+    console.log(year)
+    // Vérifier si la date est le 1er janvier
+    if (year < 2024) {
+      // Si ce n'est pas le 1er janvier, cacher le bouton de téléchargement
+      document.getElementById('down').style.display = 'none';
+    }
+    // Date cible (1er janvier de l'année suivante)
+    const targetDate = new Date(new Date().getFullYear() + 1, 0, 1);
+
+    // Fonction pour mettre à jour le chronomètre
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      // Calcul des jours, heures, minutes et secondes restantes
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Affichage dans le document
+      document.getElementById('countdown').innerHTML = `
+        Temps restant avant le téléchargement  : ${days} jours, ${hours} heures, ${minutes} minutes, ${seconds} secondes
+      `;
+
+      // Actualisation du compte à rebours toutes les 1 seconde
+      if (distance > 0) {
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+
+    // Appeler la fonction pour la première fois
+    updateCountdown();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: url("FondPokedex.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optionnel : pour figer l'image pendant le défilement */
+    padding: 16px;
+}
+    img{
+        width: 256px;
+        height: auto;
+        margin: 16px;
+    }
+    video{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        margin: 16px;
+        width: calc(100% - 32px);
+        }
+    
+    .desc{
+        background-color: rgb(101, 101, 160);
+        color: white;
+        width: auto;
+        height: auto;
+        text-align: center;
+    
+    }
+    .pnj{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+        color: rgb(42, 165, 54);
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 75px;
+        color: rgb(58, 132, 66);
+    }
+    #pok{
+        width: 100%;
+        height: auto;
+    }
+    #menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+
+
+}
+
+    
+</style>
+<body>
+    <!-- Menu burger -->
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Home</a></li>
+      <li><a class="menu__item" href="pnj_sheet.html">PNJ</a></li>
+    </ul>
+  </div>
+  <!-- Autres éléments de la page -->
+    <h1>Model de PNJ</h1>
+    <h2>Si vous voulez avoir votre pnj dans le jeu il vous suffit de vous dessiner en 16x16 selon les models suivant . <br> Il vous suffit de cliquer sur le model voulu pour telecharger le zip correspondant .</h2>
+    <div >
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Alex</div>
+        <a href="pnj/Alex.zip" download="pnj/Alex" >
+                <img src="pnj/Alex/front.png" alt="">
+                <img src="pnj/Alex/back.png" alt="">
+                <img src="pnj/Alex/left.png" alt="">
+                <img src="pnj/Alex/right.png" alt="">  
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Champion_eau</div>
+        <a href="pnj/Champion_eau.zip" download="pnj/Champion_eau">
+            
+            <img src="pnj/Champion_eau/front.png" alt="">
+            <img src="pnj/Champion_eau/back.png" alt="">
+            <img src="pnj/Champion_eau/left.png" alt="">
+            <img src="pnj/Champion_eau/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Dany</div>
+        <a href="pnj/Dany.zip" download="pnj/Dany">
+            
+            <img src="pnj/Dany/front.png" alt="">
+            <img src="pnj/Dany/back.png" alt="">
+            <img src="pnj/Dany/left.png" alt="">
+            <img src="pnj/Dany/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Flora</div>
+        <a href="pnj/Flora.zip" download="pnj/Flora">
+            
+            <img src="pnj/Flora/front.png" alt="">
+            <img src="pnj/Flora/back.png" alt="">
+            <img src="pnj/Flora/left.png" alt="">
+            <img src="pnj/Flora/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: infermiere</div>
+        <a href="pnj/infermiere.zip" download="pnj/infermière">
+            
+            <img src="pnj/infermiere/front.png" alt="">
+            <img src="pnj/infermiere/back.png" alt="">
+            <img src="pnj/infermiere/left.png" alt="">
+            <img src="pnj/infermiere/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Joe</div>
+        <a href="pnj/Joe.zip" download="pnj/joe">
+            
+            <img src="pnj/Joe/front.png" alt="">
+            <img src="pnj/Joe/back.png" alt="">
+            <img src="pnj/Joe/left.png" alt="">
+            <img src="pnj/Joe/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Lea</div>
+        <a href="pnj/Lea.zip" download="pnj/Lea">
+            <img src="pnj/Lea/front.png" alt="">
+            <img src="pnj/Lea/back.png" alt="">
+            <img src="pnj/Lea/left.png" alt="">
+            <img src="pnj/Lea/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class = "desc">Fait par: W3IZZ <br> se nomme: Maman</div>
+        <a href="pnj/Maman.zip" download="pnj/Maman">
+            
+            <img src="pnj/Maman/front.png" alt="">
+            <img src="pnj/Maman/back.png" alt="">
+            <img src="pnj/Maman/left.png" alt="">
+            <img src="pnj/Maman/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par:Sussy <br> se nomme: max</div>
+        <a href="pnj/max.zip" download="pnj/Max">
+            
+            <img src="pnj/max/front.png" alt="">
+            <img src="pnj/max/back.png" alt="">
+            <img src="pnj/max/left.png" alt="">
+            <img src="pnj/max/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class = "desc">Fait par: W3IZZ <br> se nomme: Nageur1</div>
+        <a href="pnj/Nageur1.zip" download="pnj/Nageur1">
+            
+            <img src="pnj/Nageur1/front.png" alt="">
+            <img src="pnj/Nageur1/back.png" alt="">
+            <img src="pnj/Nageur1/left.png" alt="">
+            <img src="pnj/Nageur1/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Nageur2</div>
+        <a href="pnj/Nageur2.zip" download="pnj/Nageur2">
+            
+            <img src="pnj/Nageur2/front.png" alt="">
+            <img src="pnj/Nageur2/back.png" alt="">
+            <img src="pnj/Nageur2/left.png" alt="">
+            <img src="pnj/Nageur2/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Player</div>
+        <a href="pnj/player.zip" download="pnj/player">
+            
+            <img src="pnj/player/Player.png" alt="">
+            <img src="pnj/player/PlayerBack.png" alt="">
+            <img src="pnj/player/PlayerLeft.png" alt="">
+            <img src="pnj/player/PlayerRight.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Prof</div>
+        <a href="pnj/Prof.zip" download="pnj/Prof">
+            
+            <img src="pnj/Prof/front.png" alt="">
+            <img src="pnj/Prof/back.png" alt="">
+            <img src="pnj/Prof/left.png" alt="">
+            <img src="pnj/Prof/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: W3IZZ <br> se nomme: Rival</div>
+        <a href="pnj/rival.zip" download="pnj/rival">
+            
+            <img src="pnj/rival/front.png" alt="">
+            <img src="pnj/rival/back.png" alt="">
+            <img src="pnj/rival/left.png" alt="">
+            <img src="pnj/rival/right.png" alt="">
+        </a>
+    </div>
+    <div>
+        <div class="desc">Fait par: Toby <br> se nomme: Toby</div>
+        <a href="pnj/Toby1.zip" download="pnj/Toby">
+            
+            <img src="pnj/Toby1/front.png" alt="">
+            <img src="pnj/Toby1/back.png" alt="">
+            <img src="pnj/Toby1/left.png" alt="">
+            <img src="pnj/Toby1/right.png" alt="">
+        </a>
+    </div>
+    
+</body>
+</html>
