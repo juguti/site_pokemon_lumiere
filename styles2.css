@@ -17,6 +17,7 @@ body{
   .video-container {
     margin-top: 50px;
     text-align: center;
+    color: rgb(122, 147, 84);
   }
   
   /* Styles pour le bouton de téléchargement */
